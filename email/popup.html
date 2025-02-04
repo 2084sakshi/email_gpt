@@ -1,0 +1,33 @@
+
+<html>
+<head>
+    <title>Email Generator</title>
+</head>
+<body>
+    <h1>Email Generator</h1>
+    <form id="email-form">
+        <input type="text" id="src" placeholder="Sender" required />
+        <input type="text" id="des" placeholder="Receiver" required />
+        <input type="text" id="subject" placeholder="Subject" required />
+        <select id="tone" name="tone">
+            <option value="Formal">Formal</option>
+            <option value="Informal">Informal</option>
+            <option value="Neutral">Neutral</option>
+            <option value="Request">Request</option>
+            <option value="Complaint">Complaint</option>
+            <option value="Apology">Apology</option>
+            <option value="Thank You">Thank You</option>
+            <option value="Suggestion">Suggestion</option>
+            <option value="Advice">Advice</option>
+            <option value="Invitation">Invitation</option>
+            <option value="Reminder">Reminder</option>
+            <option value="Urgent">Urgent</option>
+            <option value="Congratulatory">Congratulatory</option>
+        </select>
+        <textarea id="about" placeholder="What is the email about?" required></textarea>
+        <button type="submit">Generate Email</button>
+    </form>
+    <div id="result"></div>
+    <script src="popup.js"></script>
+</body>
+</html>
