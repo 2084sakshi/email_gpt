@@ -6,7 +6,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
-genai.configure(api_key="AIzaSyA4zdlNqQ8wfZXskVRedueEn72107ZAIOo")
+genai.configure(api_key="")
 model = genai.GenerativeModel("gemini-pro")
 
 # Home page with a button
