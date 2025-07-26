@@ -3,7 +3,7 @@ import google.generativeai as genai
 import streamlit as st
 import os
 
-genai.configure(api_key="AIzaSyA4zdlNqQ8wfZXskVRedueEn72107ZAIOo")
+genai.configure(api_key="")
 model = genai.GenerativeModel("gemini-pro")
 
 def get_email( src , des, subject, tone, about):
